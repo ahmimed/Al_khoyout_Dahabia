@@ -118,15 +118,28 @@ body {
 .menu-toggle {
     display: none;
     flex-direction: column;
+    gap: 6px;
     cursor: pointer;
+    padding: 5px;
 }
 
 .menu-toggle span {
     width: 25px;
-    height: 3px;
+    height: 2px;
     background: #333;
-    margin: 3px 0;
-    transition: 0.3s;
+    transition: all 0.3s ease;
+}
+
+.menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -6px);
 }
 
 /* Arabic Language Support */
@@ -492,4 +505,91 @@ body[dir="rtl"] .language-switcher {
 
 .product-card.active {
     display: block;
+}
+
+/* Header Responsive Styles */
+@media screen and (max-width: 768px) {
+    .nav-wrapper {
+        padding: 0.5rem;
+    }
+
+    .nav-menu {
+        display: none;
+        position: fixed;
+        top: 70px;
+        left: 0;
+        right: 0;
+        background: white;
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-menu.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .logo img {
+        height: 50px;
+    }
+
+    .language-switcher {
+        margin-right: 1rem;
+    }
+}
+
+/* Footer Responsive Styles */
+@media screen and (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .social-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .footer-brand h3 {
+        font-size: 1.2rem;
+    }
+
+    .social-link {
+        justify-content: center;
+    }
+
+    .footer-bottom {
+        margin-top: 1.5rem;
+        text-align: center;
+    }
+}
+
+/* Additional responsive adjustments */
+@media screen and (max-width: 480px) {
+    .nav-wrapper {
+        padding: 0.3rem;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+
+    .lang-btn {
+        padding: 0.3rem 0.8rem;
+        font-size: 0.8rem;
+    }
+
+    .footer-title {
+        font-size: 1.5rem;
+    }
+
+    .footer-title .subtitle {
+        font-size: 1rem;
+    }
 }
