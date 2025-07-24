@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> AL-Khoyout_Dahabia</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <img src="Haq/logo-khoyout.png" alt="">
+                </div>
+                <nav class="nav">
+                    <ul class="nav-menu">
+                        <li><a href="#accueil" class="nav-link" data-fr="Accueil" data-ar="الرئيسية">Accueil</a></li>
+                        <li><a href="#produits" class="nav-link" data-fr="Nos produits" data-ar="منتجاتنا">Nos produits</a></li>
+                        <li><a href="#contact" class="nav-link" data-fr="Contact" data-ar="تواصل">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="language-switcher">
+                    <button class="lang-btn active" data-lang="fr">FR</button>
+                    <button class="lang-btn" data-lang="ar">العربية</button>
+                </div>
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h2 data-fr="Votre partenaire en couture professionnelle" data-ar="شريككم في الخياطة الاحترافية">Votre partenaire en couture professionnelle</h2>
+                <p data-fr="Vente en gros et à l'unité -------- A vous de choisir !" data-ar="البيع بالجملة أو بالتجزئة — الخيار لك!">Vente en gros et à l'unité -------- A vous de choisir !</p>
+                <button class="cta-button" onclick="scrollToProducts()" data-fr="Voir nos produits" data-ar="اطلعي على منتجاتنا">Voir nos produits</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="produits" class="products">
+        <div class="container">
+            <h2 class="section-title" data-fr="Nos Sfifa et Sqali" data-ar="مجموعاتنا">Nos Sfifa et Sqali</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="Haq/20250711_1421_Broderie Élégante_remix_01jzwt9wv5ekfvkq7npnb8v13c.png" alt="">
+                    <div class="product-info">
+                        <h3 data-fr="Disponible chez الخيوط الذهبية " data-ar="متوفر عندالخيوط الذهبية  " >Disponible chez الخيوط الذهبية </h3>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('https:// AL-Khoyout_Dahabia.com/Haq/20250711_1421_Broderie Élégante_remix_01jzwt9wv5ekfvkq7npnb8v13c.png')" data-fr="Commander sur WhatsApp" data-ar="اطلبي عبر واتساب">
+                            Commander sur WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Haq/20250711_1432_Bracelet Multicolore Tissé_remix_01jzwty2gdfnevnjywt86v3a5p.png" alt="">
+                    <div class="product-info">
+                        <h3 data-fr="Disponible chez الخيوط الذهبية " data-ar="متوفر عندالخيوط الذهبية">Disponible chez الخيوط الذهبية </h3>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('https:// AL-Khoyout_Dahabia.com/Haq/20250711_1432_Bracelet Multicolore Tissé_remix_01jzwty2gdfnevnjywt86v3a5p.png')" data-fr="Commander sur WhatsApp" data-ar="اطلبي عبر واتساب">
+                            Commander sur WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Haq/20250711_1442_Rubans Brodés Colorés_remix_01jzwvgwnyes1s6xpgssenqd3d.png" alt="">
+                    <div class="product-info">
+                        <h3 data-fr="Disponible chez الخيوط الذهبية " data-ar="متوفر عندالخيوط الذهبية">Disponible chez الخيوط الذهبية </h3>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('https:// AL-Khoyout_Dahabia.com/Haq/20250711_1442_Rubans Brodés Colorés_remix_01jzwvgwnyes1s6xpgssenqd3d.png')" data-fr="Commander sur WhatsApp" data-ar="اطلبي عبر واتساب">
+                            Commander sur WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Haq/20250718_1433_Ruban Coloré Professionnel_remix_01k0evre2qe9aa27ezb3hahemz.png" alt="">
+                    <div class="product-info">
+                        <h3 data-fr="Disponible chez الخيوط الذهبية " data-ar="متوفر عندالخيوط الذهبية">Disponible chez الخيوط الذهبية </h3>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('https:// AL-Khoyout_Dahabia.com/Haq/20250718_1433_Ruban Coloré Professionnel_remix_01k0evre2qe9aa27ezb3hahemz.png')" data-fr="Commander sur WhatsApp" data-ar="اطلبي عبر واتساب">
+                            Commander sur WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Haq/20250718_1425_Bobines de Fil Doré_remix_01k0ev8kjxfn09agdp3fczgpkw.png" alt="">
+                    <div class="product-info">
+                        <h3 data-fr="Disponible chez الخيوط الذهبية " data-ar="متوفر عندالخيوط الذهبية">Disponible chez الخيوط الذهبية </h3>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('https:// AL-Khoyout_Dahabia.com/Haq/20250718_1425_Bobines de Fil Doré_remix_01k0ev8kjxfn09agdp3fczgpkw.png')" data-fr="Commander sur WhatsApp" data-ar="اطلبي عبر واتساب">
+                            Commander sur WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Haq/20250718_1409_Fusion de Bobines_remix_01k0etbg9me60s2dke86gjyjct.png" alt="">
+                    <div class="product-info">
+                        <h3 data-fr="Disponible chez الخيوط الذهبية " data-ar="متوفر عندالخيوط الذهبية">Disponible chez الخيوط الذهبية </h3>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('https:// AL-Khoyout_Dahabia.com/Haq/20250718_1409_Fusion de Bobines_remix_01k0etbg9me60s2dke86gjyjct.png')" data-fr="Commander sur WhatsApp" data-ar="اطلبي عبر واتساب">
+                            Commander sur WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Haq/20250718_1412_Corde Blanche Tressée_remix_01k0etj4xqe32bmd2y845fmtt7.png" alt="">
+                    <div class="product-info">
+                        <h3 data-fr="Disponible chez الخيوط الذهبية " data-ar="متوفر عندالخيوط الذهبية">Disponible chez الخيوط الذهبية </h3>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('https:// AL-Khoyout_Dahabia.com/Haq/20250718_1412_Corde Blanche Tressée_remix_01k0etj4xqe32bmd2y845fmtt7.png')" data-fr="Commander sur WhatsApp" data-ar="اطلبي عبر واتساب">
+                            Commander sur WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Haq/20250718_1420_Fond Professionnel Coloré_remix_01k0etzpm7f0g89bs3q37bfvqy.png" alt="">
+                    <div class="product-info">
+                        <h3 data-fr="Disponible chez الخيوط الذهبية " data-ar="متوفر عندالخيوط الذهبية">Disponible chez الخيوط الذهبية </h3>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('https:// AL-Khoyout_Dahabia.com/Haq/20250718_1420_Fond Professionnel Coloré_remix_01k0etzpm7f0g89bs3q37bfvqy.png')" data-fr="Commander sur WhatsApp" data-ar="اطلبي عبر واتساب">
+                            Commander sur WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Haq/20250718_1441_Purple Trim Decor_remix_01k0ew6czte8t97wcn0k7chr3p.png" alt="">
+                    <div class="product-info">
+                        <h3 data-fr="Disponible chez الخيوط الذهبية " data-ar="متوفر عندالخيوط الذهبية">Disponible chez الخيوط الذهبية </h3>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('https:// AL-Khoyout_Dahabia.com/Haq/20250718_1441_Purple Trim Decor_remix_01k0ew6czte8t97wcn0k7chr3p.png')" data-fr="Commander sur WhatsApp" data-ar="اطلبي عبر واتساب">
+                            Commander sur WhatsApp
+                        </button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <img src="Haq/WhatsApp Image 2025-07-15 à 21.36.34_23c47170.jpg" alt="">
+                    <div class="product-info">
+                        <h3 data-fr="Disponible chez الخيوط الذهبية " data-ar="متوفر عندالخيوط الذهبية">Disponible chez الخيوط الذهبية </h3>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('https:// AL-Khoyout_Dahabia.com/Haq/WhatsApp Image 2025-07-15 à 21.36.34_23c47170.jpg')" data-fr="Commander sur WhatsApp" data-ar="اطلبي عبر واتساب">
+                            Commander sur WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="product-card">
+                    <img src="Haq/WhatsApp Image 2025-07-15 à 21.36.44_3c8fc2e8.jpg" alt="">
+                    <div class="product-info">
+                        <h3 data-fr="Disponible chez الخيوط الذهبية " data-ar="متوفر عندالخيوط الذهبية">Disponible chez الخيوط الذهبية </h3>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('https:// AL-Khoyout_Dahabia.com/Haq/WhatsApp Image 2025-07-15 à 21.36.44_3c8fc2e8.jpg')" data-fr="Commander sur WhatsApp" data-ar="اطلبي عبر واتساب">
+                            Commander sur WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Haq/WhatsApp Image 2025-07-15 à 21.36.45_d422a5c6.jpg" alt="">
+                    <div class="product-info">
+                        <h3 data-fr="Disponible chez الخيوط الذهبية " data-ar="متوفر عندالخيوط الذهبية">Disponible chez الخيوط الذهبية </h3>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('https:// AL-Khoyout_Dahabia.com/Haq/WhatsApp Image 2025-07-15 à 21.36.45_d422a5c6.jpg')" data-fr="Commander sur WhatsApp" data-ar="اطلبي عبر واتساب">
+                            Commander sur WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Haq/20250718_1317_Rubans Épais Colorés_remix_01k0eqche3f529xbz3qck9f668.png" alt="">
+                    <div class="product-info">
+                        <h3 data-fr="Disponible chez الخيوط الذهبية " data-ar="متوفر عندالخيوط الذهبية">Disponible chez الخيوط الذهبية </h3>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('https:// AL-Khoyout_Dahabia.com/Haq/20250718_1317_Rubans Épais Colorés_remix_01k0eqche3f529xbz3qck9f668.png')" data-fr="Commander sur WhatsApp" data-ar="اطلبي عبر واتساب">
+                            Commander sur WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Haq/20250718_1320_Colorful Patterned Ribbons_remix_01k0eqht83f62a3th60pksx32g.png" alt="">
+                    <div class="product-info">
+                        <h3 data-fr="Disponible chez الخيوط الذهبية " data-ar="متوفر عندالخيوط الذهبية">Disponible chez الخيوط الذهبية </h3>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('https:// AL-Khoyout_Dahabia.com/Haq/20250718_1320_Colorful Patterned Ribbons_remix_01k0eqht83f62a3th60pksx32g.png')" data-fr="Commander sur WhatsApp" data-ar="اطلبي عبر واتساب">
+                            Commander sur WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Haq/20250718_1325_Finitions Élégantes_remix_01k0eqt09kegyasn47fbbvz0n4.png" alt="">
+                    <div class="product-info">
+                        <h3 data-fr="Disponible chez الخيوط الذهبية " data-ar="متوفر عندالخيوط الذهبية">Disponible chez الخيوط الذهبية </h3>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('https:// AL-Khoyout_Dahabia.com/Haq/20250718_1325_Finitions Élégantes_remix_01k0eqt09kegyasn47fbbvz0n4.png')" data-fr="Commander sur WhatsApp" data-ar="اطلبي عبر واتساب">
+                            Commander sur WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Haq/20250718_1328_Tresses Multicolores Créatives_remix_01k0eqzx2nf288fkf6867anayk.png" alt="">
+                    <div class="product-info">
+                        <h3 data-fr="Disponible chez الخيوط الذهبية " data-ar="متوفر عندالخيوط الذهبية">Disponible chez الخيوط الذهبية </h3>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('https:// AL-Khoyout_Dahabia.com/Haq/20250718_1328_Tresses Multicolores Créatives_remix_01k0eqzx2nf288fkf6867anayk.png')" data-fr="Commander sur WhatsApp" data-ar="اطلبي عبر واتساب">
+                            Commander sur WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Haq/20250718_1339_Tissage Professionnel Coloré_remix_01k0ern27yfe8tt8sre282v86t.png" alt="">
+                    <div class="product-info">
+                        <h3 data-fr="Disponible chez الخيوط الذهبية " data-ar="متوفر عندالخيوط الذهبية">Disponible chez الخيوط الذهبية </h3>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('https:// AL-Khoyout_Dahabia.com/Haq/20250718_1339_Tissage Professionnel Coloré_remix_01k0ern27yfe8tt8sre282v86t.png')" data-fr="Commander sur WhatsApp" data-ar="اطلبي عبر واتساب">
+                            Commander sur WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Haq/20250718_1344_Photo Éclaircie en Couleurs_remix_01k0ery61ceqhaxqaz8hfa82fk.png" alt="">
+                    <div class="product-info">
+                        <h3 data-fr="Disponible chez الخيوط الذهبية " data-ar="متوفر عندالخيوط الذهبية">Disponible chez الخيوط الذهبية </h3>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('https:// AL-Khoyout_Dahabia.com/Haq/20250718_1344_Photo Éclaircie en Couleurs_remix_01k0ery61ceqhaxqaz8hfa82fk.png')" data-fr="Commander sur WhatsApp" data-ar="اطلبي عبر واتساب">
+                            Commander sur WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="product-card">
+                    <img src="Haq/20250718_1348_Colorful Fabric Rolls_remix_01k0es55fwfdj83ftc4atd4tmk.png" alt="">
+                    <div class="product-info">
+                        <h3 data-fr="Disponible chez الخيوط الذهبية " data-ar="متوفر عندالخيوط الذهبية">Disponible chez الخيوط الذهبية </h3>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('https:// AL-Khoyout_Dahabia.com/Haq/20250718_1348_Colorful Fabric Rolls_remix_01k0es55fwfdj83ftc4atd4tmk.png')" data-fr="Commander sur WhatsApp" data-ar="اطلبي عبر واتساب">
+                            Commander sur WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="product-card">
+                    <img src="Haq/20250718_1351_Rouleaux de Tissus Colorés_remix_01k0esb2f8ez9r2fqtmqgceq6w.png" alt="">
+                    <div class="product-info">
+                        <h3 data-fr="Disponible chez الخيوط الذهبية " data-ar="متوفر عندالخيوط الذهبية">Disponible chez الخيوط الذهبية </h3>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('https:// AL-Khoyout_Dahabia.com/Haq/20250718_1351_Rouleaux de Tissus Colorés_remix_01k0esb2f8ez9r2fqtmqgceq6w.png')" data-fr="Commander sur WhatsApp" data-ar="اطلبي عبر واتساب">
+                            Commander sur WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+
+
+                <div class="product-card">
+                    <img src="Haq/20250718_1354_Colorful Thread Spools_remix_01k0esfjvbe9yvp9h812gy3ctd.png" alt="">
+                    <div class="product-info">
+                        <h3 data-fr="Disponible chez الخيوط الذهبية " data-ar="متوفر عندالخيوط الذهبية">Disponible chez الخيوط الذهبية </h3>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('https:// AL-Khoyout_Dahabia.com/Haq/20250718_1354_Colorful Thread Spools_remix_01k0esfjvbe9yvp9h812gy3ctd.png')" data-fr="Commander sur WhatsApp" data-ar="اطلبي عبر واتساب">
+                            Commander sur WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Haq/20250718_1413_Colorful Decorative Ribbons_remix_01k0etk6a3fv5vmt3k9vyrftrr.png" alt="">
+                    <div class="product-info">
+                        <h3 data-fr="Disponible chez الخيوط الذهبية " data-ar="متوفر عندالخيوط الذهبية">Disponible chez الخيوط الذهبية </h3>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('https:// AL-Khoyout_Dahabia.com/Haq/20250718_1413_Colorful Decorative Ribbons_remix_01k0etk6a3fv5vmt3k9vyrftrr.png')" data-fr="Commander sur WhatsApp" data-ar="اطلبي عبر واتساب">
+                            Commander sur WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Haq/1.png" alt="">
+                    <div class="product-info">
+                        <h3 data-fr="Disponible chez الخيوط الذهبية " data-ar="متوفر عندالخيوط الذهبية">Disponible chez الخيوط الذهبية </h3>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('https:// AL-Khoyout_Dahabia.com/Haq/')" data-fr="Commander sur WhatsApp" data-ar="اطلبي عبر واتساب">
+                            Commander sur WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Haq/2.png" alt="">
+                    <div class="product-info">
+                        <h3 data-fr="Disponible chez الخيوط الذهبية " data-ar="متوفر عندالخيوط الذهبية">Disponible chez الخيوط الذهبية </h3>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('https:// AL-Khoyout_Dahabia.com/Haq/')" data-fr="Commander sur WhatsApp" data-ar="اطلبي عبر واتساب">
+                            Commander sur WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Haq/3.png" alt="">
+                    <div class="product-info">
+                        <h3 data-fr="Disponible chez الخيوط الذهبية " data-ar="متوفر عندالخيوط الذهبية">Disponible chez الخيوط الذهبية </h3>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('https:// AL-Khoyout_Dahabia.com/Haq/3.png')" data-fr="Commander sur WhatsApp" data-ar="اطلبي عبر واتساب">
+                            Commander sur WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Haq/4.png" alt="">
+                    <div class="product-info">
+                        <h3 data-fr="Disponible chez الخيوط الذهبية " data-ar="متوفر عندالخيوط الذهبية">Disponible chez الخيوط الذهبية </h3>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('https:// AL-Khoyout_Dahabia.com/Haq/4.png')" data-fr="Commander sur WhatsApp" data-ar="اطلبي عبر واتساب">
+                            Commander sur WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Haq/5.png" alt="">
+                    <div class="product-info">
+                        <h3 data-fr="Disponible chez الخيوط الذهبية " data-ar="متوفر عندالخيوط الذهبية">Disponible chez الخيوط الذهبية </h3>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('https:// AL-Khoyout_Dahabia.com/Haq/5.png')" data-fr="Commander sur WhatsApp" data-ar="اطلبي عبر واتساب">
+                            Commander sur WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Haq/6.png" alt="">
+                    <div class="product-info">
+                        <h3 data-fr="Disponible chez الخيوط الذهبية " data-ar="متوفر عندالخيوط الذهبية">Disponible chez الخيوط الذهبية </h3>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('https:// AL-Khoyout_Dahabia.com/Haq/6.png')" data-fr="Commander sur WhatsApp" data-ar="اطلبي عبر واتساب">
+                            Commander sur WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="product-card">
+                    <img src="Haq/7.png" alt="">
+                    <div class="product-info">
+                        <h3 data-fr="Disponible chez الخيوط الذهبية " data-ar="متوفر عندالخيوط الذهبية">Disponible chez الخيوط الذهبية </h3>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('https:// AL-Khoyout_Dahabia.com/Haq/7.png')" data-fr="Commander sur WhatsApp" data-ar="اطلبي عبر واتساب">
+                            Commander sur WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="product-card">
+                    <img src="Haq/8.png" alt="">
+                    <div class="product-info">
+                        <h3 data-fr="Disponible chez الخيوط الذهبية " data-ar="متوفر عندالخيوط الذهبية">Disponible chez الخيوط الذهبية </h3>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('https:// AL-Khoyout_Dahabia.com/Haq/8.png')" data-fr="Commander sur WhatsApp" data-ar="اطلبي عبر واتساب">
+                            Commander sur WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Haq/9.png" alt="">
+                    <div class="product-info">
+                        <h3 data-fr="Disponible chez الخيوط الذهبية " data-ar="متوفر عندالخيوط الذهبية">Disponible chez الخيوط الذهبية </h3>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('https:// AL-Khoyout_Dahabia.com/Haq/9.png')" data-fr="Commander sur WhatsApp" data-ar="اطلبي عبر واتساب">
+                            Commander sur WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Haq/10.png" alt="">
+                    <div class="product-info">
+                        <h3 data-fr="Disponible chez الخيوط الذهبية " data-ar="متوفر عندالخيوط الذهبية">Disponible chez الخيوط الذهبية </h3>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('https:// AL-Khoyout_Dahabia.com/Haq/10.png')" data-fr="Commander sur WhatsApp" data-ar="اطلبي عبر واتساب">
+                            Commander sur WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Haq/11.jpg" alt="">
+                    <div class="product-info">
+                        <h3 data-fr="Disponible chez الخيوط الذهبية " data-ar="متوفر عندالخيوط الذهبية">Disponible chez الخيوط الذهبية </h3>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('https:// AL-Khoyout_Dahabia.com/Haq/11.jpg')" data-fr="Commander sur WhatsApp" data-ar="اطلبي عبر واتساب">
+                            Commander sur WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Haq/12.jpg" alt="">
+                    <div class="product-info">
+                        <h3 data-fr="Disponible chez الخيوط الذهبية " data-ar="متوفر عندالخيوط الذهبية">Disponible chez الخيوط الذهبية </h3>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('https:// AL-Khoyout_Dahabia.com/Haq/12.jpg')" data-fr="Commander sur WhatsApp" data-ar="اطلبي عبر واتساب">
+                            Commander sur WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Haq/13.jpg" alt="">
+                    <div class="product-info">
+                        <h3 data-fr="Disponible chez الخيوط الذهبية " data-ar="متوفر عندالخيوط الذهبية">Disponible chez الخيوط الذهبية </h3>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('https:// AL-Khoyout_Dahabia.com/Haq/13.jpg')" data-fr="Commander sur WhatsApp" data-ar="اطلبي عبر واتساب">
+                            Commander sur WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Haq/14.jpg" alt="">
+                    <div class="product-info">
+                        <h3 data-fr="Disponible chez الخيوط الذهبية " data-ar="متوفر عندالخيوط الذهبية">Disponible chez الخيوط الذهبية </h3>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('https:// AL-Khoyout_Dahabia.com/Haq/14.jpg')" data-fr="Commander sur WhatsApp" data-ar="اطلبي عبر واتساب">
+                            Commander sur WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Haq/15.jpg" alt="">
+                    <div class="product-info">
+                        <h3 data-fr="Disponible chez الخيوط الذهبية " data-ar="متوفر عندالخيوط الذهبية">Disponible chez الخيوط الذهبية </h3>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('https:// AL-Khoyout_Dahabia.com/Haq/15.jpg')" data-fr="Commander sur WhatsApp" data-ar="اطلبي عبر واتساب">
+                            Commander sur WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Haq/16.jpg" alt="">
+                    <div class="product-info">
+                        <h3 data-fr="Disponible chez الخيوط الذهبية " data-ar="متوفر عندالخيوط الذهبية">Disponible chez الخيوط الذهبية </h3>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('https:// AL-Khoyout_Dahabia.com/Haq/16.jpg')" data-fr="Commander sur WhatsApp" data-ar="اطلبي عبر واتساب">
+                            Commander sur WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Haq/17.jpg" alt="">
+                    <div class="product-info">
+                        <h3 data-fr="Disponible chez الخيوط الذهبية " data-ar="متوفر عندالخيوط الذهبية">Disponible chez الخيوط الذهبية </h3>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('https:// AL-Khoyout_Dahabia.com/Haq/17.jpg')" data-fr="Commander sur WhatsApp" data-ar="اطلبي عبر واتساب">
+                            Commander sur WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Haq/18.jpg" alt="">
+                    <div class="product-info">
+                        <h3 data-fr="Disponible chez الخيوط الذهبية " data-ar="متوفر عندالخيوط الذهبية">Disponible chez الخيوط الذهبية </h3>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('https:// AL-Khoyout_Dahabia.com/Haq/18.jpg')" data-fr="Commander sur WhatsApp" data-ar="اطلبي عبر واتساب">
+                            Commander sur WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Haq/19.jpg" alt="">
+                    <div class="product-info">
+                        <h3 data-fr="Disponible chez الخيوط الذهبية " data-ar="متوفر عندالخيوط الذهبية">Disponible chez الخيوط الذهبية </h3>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('https:// AL-Khoyout_Dahabia.com/Haq/19.jpg')" data-fr="Commander sur WhatsApp" data-ar="اطلبي عبر واتساب">
+                            Commander sur WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Haq/20.jpg" alt="">
+                    <div class="product-info">
+                        <h3 data-fr="Disponible chez الخيوط الذهبية " data-ar="متوفر عندالخيوط الذهبية">Disponible chez الخيوط الذهبية </h3>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('https:// AL-Khoyout_Dahabia.com/Haq/20.jpg')" data-fr="Commander sur WhatsApp" data-ar="اطلبي عبر واتساب">
+                            Commander sur WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="Haq/21.jpg" alt="">
+                    <div class="product-info">
+                        <h3 data-fr="Disponible chez الخيوط الذهبية " data-ar="متوفر عندالخيوط الذهبية">Disponible chez الخيوط الذهبية </h3>
+                        <button class="whatsapp-btn" onclick="orderWhatsApp('https:// AL-Khoyout_Dahabia.com/Haq/21.jpg')" data-fr="Commander sur WhatsApp" data-ar="اطلبي عبر واتساب">
+                            Commander sur WhatsApp
+                        </button>
+                    </div>
+                </div>
+
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- Add pagination here, after products-grid but before contact section -->
+    <div class="pagination">
+        <!-- Pagination buttons will be added dynamically by JavaScript -->
+    </div>
+    </section>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title" data-fr="Contactez-nous" data-ar="تواصلي معنا">Contactez-nous</h2>
+            <p class="contact-text" data-fr="Contactez-nous pour toute commande ou information" data-ar="تواصلي معنا لأي طلب أو استفسار">Contactez-nous pour toute commande ou information</p>
+            <div class="contact-buttons">
+                <button class="contact-btn whatsapp" onclick="contactWhatsApp()">
+                    <span>💬</span> <span data-fr="WhatsApp" data-ar="واتساب">WhatsApp</span>
+                </button>
+                <button class="contact-btn phone" onclick="callUs()">
+                    <span>📞</span> <span data-fr="Appeler" data-ar="اتصلي">Appeler</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 class="footer-title">الخيوط الذهبية<span class="subtitle">Moutamid Fourniture</span></h3>
+                    
+                </div>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/share/15pNZtAXT8/?mibextid=wwXIfr" class="social-link"><i class="fab fa-facebook"></i> Facebook</a>
+                    <a href="https://www.instagram.com/abdelhak_motamid?igsh=MTRuaHhwdzlvbHgyZA%3D%3D&utm_source=qr" class="social-link"><i class="fab fa-instagram"></i> Instagram</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-fr="© 2024 الخيوط الذهبية. Tous droits réservés." data-ar="© 2024 الخيوط الذهبية. جميع الحقوق محفوظة.">© 2024 الخيوط الذهبية. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
+
