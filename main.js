@@ -116,11 +116,15 @@ function scrollToProducts() {
 }
 
 // WhatsApp order function
-function orderWhatsApp(productName) {
-    const baseMessage = window.currentMessages?.product || 'Bonjour, je suis intéressée par ce produit: ';
-    const message = encodeURIComponent(`${baseMessage}${productName}`);
-    const whatsappUrl = `https://wa.me/212671670110?text=${message}`;
-    window.open(whatsappUrl, '_blank');
+function orderWhatsApp(imagePath) {
+    const phone = "212671670110";
+    const siteURL = "https://ahmimed.github.io/Al_khoyout_Dahabia/";
+    const fullImageURL = siteURL + imagePath;
+    const message = "Bonjour, je veux commander ce produit : " + fullImageURL;
+    const encodedMessage = encodeURIComponent(message);
+    const whatsappURL = "https://wa.me/" + phone + "?text=" + encodedMessage;
+
+    window.open(whatsappURL, '_blank');
 }
 
 // WhatsApp contact function
